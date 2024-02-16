@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DELAY=1
+
+acpi_listen | while IFS= read -r line;
+do
+	if [[ $line =~ "HEADPHONE" ]];then
+		/home/$USER/.config/closetd/config
+		exit
+		break
+	fi
+done
+exit
