@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ $USER = root ];then
-	cp closetd /usr/local/bin/closet
+	cp closet /usr/local/bin/closet
 	chmod +x /usr/local/bin/closet
 
 	mkdir /usr/local/bin/closet
