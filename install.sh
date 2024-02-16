@@ -1,11 +1,12 @@
 #!/bin/sh
 
 if [ $USER = root ];then
-	cp closetd /usr/local/bin/closetd
-	chmod +x /usr/local/bin/closetd
+	cp closetd /usr/local/bin/closet
+	chmod +x /usr/local/bin/closet
 
-	echo "#!/bin/sh" > /home/$USER/.config/closetd/config
-	chmod +x /home/$USER/.config/closetd
+	mkdir /usr/local/bin/closet
+	echo "#!/bin/sh" > /usr/local/bin/closet/run
+	chmod +x /usr/local/bin/config/run
 else
 	echo "Please run as root."
 fi
