@@ -5,7 +5,8 @@ if [ $USER = root ];then
 	chmod +x /usr/local/bin/closet
 
 	mkdir /usr/local/bin/closet
-	echo "#!/bin/sh" > /usr/local/bin/closet/run
+	touch /usr/local/bin/closet/run
+	echo '#!/bin/sh' > /usr/local/bin/closet/run
 	chmod +x /usr/local/bin/config/run
 else
 	echo "Please run as root."
