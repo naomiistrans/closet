@@ -5,7 +5,7 @@ DELAY=1
 acpi_listen | while IFS= read -r line;
 do
 	if [[ $line =~ "HEADPHONE" ]];then
-		/usr/local/bin/closet/run
+		/usr/local/bin/closet_config/run
 		exit
 		break
 	fi
